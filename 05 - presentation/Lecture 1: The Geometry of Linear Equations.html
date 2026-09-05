@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lecture 1: The Geometry of Linear Equations</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #A31F34;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Lecture 1: The Geometry of Linear Equations</h1>
+
+<p>
+<strong>Course:</strong>
+MIT 18.06 Linear Algebra — Lectures 1–34
+</p>
+
+<p>
+<strong>Study topic:</strong>
+Lecture 1: The geometry of linear equations, including row and column pictures
+</p>
+
+<section>
+<h2>Learning Objectives</h2>
+<ul>
+<li>Describe the row picture as plotting the points that satisfy each equation in the x–y plane.</li>
+<li>Interpret a system Ax = b using the columns of A.</li>
+<li>Explain a solution as both a point lying on the relevant lines and a linear combination of the columns producing b.</li>
+</ul>
+</section>
+
+<section>
+<h2>Explanation</h2>
+<p>
+A system of linear equations can be written as Ax = b. Here, A is the matrix of coefficients, x is the vector of unknowns, and b is the right-hand-side vector. In the row picture, examine one equation at a time. For two equations in two unknowns, each equation describes a line in the x–y plane. The solution is the point that lies on both lines. In the column picture, examine the columns of A. The equation Ax = b asks us to combine the columns of A in the amounts specified by the entries of x so that their linear combination equals b.
+</p>
+</section>
+
+<section>
+<h2>Key Points</h2>
+<ul>
+<li>The fundamental problem of linear algebra is solving a system of linear equations.</li>
+<li>The row picture considers one row, or one equation, at a time.</li>
+<li>For two equations and two unknowns, each equation gives a line in the x–y plane.</li>
+<li>The solution is the point that satisfies both equations and therefore lies on both lines.</li>
+<li>The column picture rewrites Ax = b as a linear combination of the columns of A equal to b.</li>
+</ul>
+</section>
+
+<section>
+<h2>Worked Example</h2>
+
+<div class="card">
+Consider the system 2x − y = 0 and −x + 2y = 3. Row picture: the first equation gives a line containing the origin, since x = 0 and y = 0 satisfy 2x − y = 0. The solution is the point (1, 2), which lies on both lines: 2(1) − 2 = 0 and −1 + 2(2) = 3. Column picture: the coefficient matrix has columns [2, −1] and [−1, 2], while b = [0, 3]. The system asks for x and y so that x[2, −1] + y[−1, 2] = [0, 3]. Using x = 1 and y = 2 gives [2, −1] + 2[−1, 2] = [0, 3]. Thus the solution is the linear combination of the columns that produces b.
+</div>
+
+</section>
+
+<section>
+<h2>Watch Relevant Lecture Sections</h2>
+
+<ul>
+<li><a href="https://archive.org/download/MIT18.06S05_MP4/01.mp4#t=0" target="_blank">Lecture 1 — The geometry of linear equations — 00:00-02:04</a></li>
+<li><a href="https://archive.org/download/MIT18.06S05_MP4/01.mp4#t=217" target="_blank">Lecture 1 — The geometry of linear equations — 03:37-05:18</a></li>
+<li><a href="https://archive.org/download/MIT18.06S05_MP4/01.mp4#t=490" target="_blank">Lecture 1 — The geometry of linear equations — 08:10-09:51</a></li>
+</ul>
+
+</section>
+
+</body>
+</html>
